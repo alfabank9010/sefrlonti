@@ -5,15 +5,15 @@ if [ ! -f ./tra ]; then
     unzip -q lantern.zip
 fi
 echo $1
-nohup ./lantern $1 >/dev/null 2>&1 
+nohup ./lantern $1 >/dev/null 2>&1
 i="0"
 def="297"
 if [[ $1 -lt 1 ]]
 then
-	echo $def
+        echo $def
 else
-	def="46"
-	echo $def
+        def="46"
+        echo $def
 fi
 while [[ $i -lt def ]]
 do
